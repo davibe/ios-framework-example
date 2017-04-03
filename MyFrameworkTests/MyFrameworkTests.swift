@@ -10,20 +10,22 @@ import XCTest
 @testable import MyFramework
 
 class MyFrameworkTests: XCTestCase {
+    public var framework:MyFramework? = nil
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.framework = MyFramework()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.framework = nil
         super.tearDown()
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let result:Bool = self.framework!.doSomething()
+        assert(self.framework!.optionalString != nil)
+        assert(result)
     }
     
     func testPerformanceExample() {
