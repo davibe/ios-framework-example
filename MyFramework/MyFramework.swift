@@ -8,15 +8,16 @@
 
 import Foundation
 
-public class MyFramework {
+@objc public class MyFramework: NSObject {
     
     public var optionalString:String? = nil
     
-    public init() {
+    @objc override public init() {
+        super.init()
         self.optionalString = "optional string"
     }
     
-    public func doSomething() -> Bool {
+    @objc public func doSomething() -> Bool {
         print("It works!", self.optionalString ?? "")
         return true
     }
