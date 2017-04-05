@@ -22,4 +22,19 @@ import Foundation
         return true
     }
     
+    @objc public func doReadResource() -> String? {
+        let bundle = Bundle(for: MyFramework.self)
+        let filePath = bundle.path(forResource: "main", ofType: "js")!
+        
+        func readFile(filePath:String) -> String? {
+            do {
+                let fileContent = try String(contentsOfFile: filePath)
+                return fileContent
+            } catch {}
+            
+            return nil
+        }
+        
+        return readFile(filePath: filePath)
+    }
 }

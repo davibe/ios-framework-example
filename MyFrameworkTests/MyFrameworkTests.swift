@@ -22,10 +22,15 @@ class MyFrameworkTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testDoSomething() {
         let result:Bool = self.framework!.doSomething()
         XCTAssert(self.framework!.optionalString != nil)
         XCTAssert(result)
+    }
+    
+    func testDoReadResource() {
+        let result = self.framework!.doReadResource()
+        XCTAssert(result != nil)
     }
     
     func testPerformanceExample() {

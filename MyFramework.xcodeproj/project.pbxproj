@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D294B361E94E3F400EC6FDE /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D294B351E94E3F400EC6FDE /* main.js */; };
+		0D294B371E94E3F400EC6FDE /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D294B351E94E3F400EC6FDE /* main.js */; };
 		0D7130CB1E92428800133C94 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7130C11E92428800133C94 /* MyFramework.framework */; };
 		0D7130D01E92428800133C94 /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7130CF1E92428800133C94 /* MyFrameworkTests.swift */; };
 		0D7130D21E92428900133C94 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7130C41E92428800133C94 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D294B351E94E3F400EC6FDE /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		0D294B381E94E7BE00EC6FDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0D7130C11E92428800133C94 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7130C41E92428800133C94 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		0D7130C51E92428800133C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		0D7130B71E92428800133C94 = {
 			isa = PBXGroup;
 			children = (
+				0D294B381E94E7BE00EC6FDE /* README.md */,
 				0D7130C31E92428800133C94 /* MyFramework */,
 				0D7130CE1E92428800133C94 /* MyFrameworkTests */,
 				0D7130C21E92428800133C94 /* Products */,
@@ -73,9 +78,10 @@
 		0D7130C31E92428800133C94 /* MyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0D7130C41E92428800133C94 /* MyFramework.h */,
 				0D7130C51E92428800133C94 /* Info.plist */,
+				0D7130C41E92428800133C94 /* MyFramework.h */,
 				0D7130DB1E92448900133C94 /* MyFramework.swift */,
+				0D294B351E94E3F400EC6FDE /* main.js */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D294B361E94E3F400EC6FDE /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D294B371E94E3F400EC6FDE /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +422,7 @@
 				0D7130D71E92428900133C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7130D81E92428900133C94 /* Build configuration list for PBXNativeTarget "MyFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				0D7130DA1E92428900133C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

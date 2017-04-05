@@ -7,7 +7,9 @@ A minimal example implementation of an iOS framework using swift
 - [x] Exports very simple api with tests
 - [x] Builds for both simulator and device
 - [x] Run tests before build, CI style
+- [x] Includes and reads a Resource file
 - [ ] Includes Swift and ObjC code
+
 
 
 Sources
