@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D294B361E94E3F400EC6FDE /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D294B351E94E3F400EC6FDE /* main.js */; };
 		0D294B371E94E3F400EC6FDE /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D294B351E94E3F400EC6FDE /* main.js */; };
+		0D3316231E951FCC00DF8748 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3316221E951FCC00DF8748 /* JavaScriptCore.framework */; };
 		0D7130CB1E92428800133C94 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7130C11E92428800133C94 /* MyFramework.framework */; };
 		0D7130D01E92428800133C94 /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7130CF1E92428800133C94 /* MyFrameworkTests.swift */; };
 		0D7130D21E92428900133C94 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7130C41E92428800133C94 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		0D294B351E94E3F400EC6FDE /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		0D294B381E94E7BE00EC6FDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0D3316221E951FCC00DF8748 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		0D7130C11E92428800133C94 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7130C41E92428800133C94 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		0D7130C51E92428800133C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3316231E951FCC00DF8748 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3316211E951FCC00DF8748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D3316221E951FCC00DF8748 /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D7130B71E92428800133C94 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +74,7 @@
 				0D7130C31E92428800133C94 /* MyFramework */,
 				0D7130CE1E92428800133C94 /* MyFrameworkTests */,
 				0D7130C21E92428800133C94 /* Products */,
+				0D3316211E951FCC00DF8748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

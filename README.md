@@ -8,8 +8,8 @@ A minimal example implementation of an iOS framework using swift
 - [x] Builds for both simulator and device
 - [x] Run tests before build, CI style
 - [x] Includes and reads a Resource file
+- [x] Runs embedded javascript resource and returns result
 - [ ] Includes Swift and ObjC code
-
 
 
 Sources

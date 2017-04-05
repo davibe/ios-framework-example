@@ -1,3 +1,3 @@
-module.export = function () {
+var test = function () {
     return "it works!"
 }

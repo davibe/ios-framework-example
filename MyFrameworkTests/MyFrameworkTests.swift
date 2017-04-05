@@ -33,6 +33,11 @@ class MyFrameworkTests: XCTestCase {
         XCTAssert(result != nil)
     }
     
+    func testDoExecuteJavascript() {
+        let result = self.framework!.doExecuteJavascript()
+        XCTAssert(result != nil)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JavaScriptCore
 
 @objc public class MyFramework: NSObject {
     
@@ -36,5 +37,15 @@ import Foundation
         }
         
         return readFile(filePath: filePath)
+    }
+    
+    @objc public func doExecuteJavascript() -> String? {
+        let jsVm = JSVirtualMachine()
+        let jsContext = JSContext(virtualMachine: jsVm)
+        let scriptSource = self.doReadResource()
+        jsContext?.evaluateScript(scriptSource)
+        let jsValue = jsContext?.evaluateScript("test()")
+        let result = jsValue?.toString()
+        return result
     }
 }
