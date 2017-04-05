@@ -24,8 +24,8 @@ class MyFrameworkTests: XCTestCase {
     
     func testExample() {
         let result:Bool = self.framework!.doSomething()
-        assert(self.framework!.optionalString != nil)
-        assert(result)
+        XCTAssert(self.framework!.optionalString != nil)
+        XCTAssert(result)
     }
     
     func testPerformanceExample() {
