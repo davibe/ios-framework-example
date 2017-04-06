@@ -8,6 +8,8 @@
 
 import Foundation
 import JavaScriptCore
+import Observable
+
 
 @objc public class MyFramework: NSObject {
     
@@ -47,5 +49,14 @@ import JavaScriptCore
         let jsValue = jsContext?.evaluateScript("test()")
         let result = jsValue?.toString()
         return result
+    }
+    
+    @objc public func doObserveValue(
+        observer: ((_ before:Int, _ after:Int) -> Void)?
+    ) -> Int {
+        var x = Observable<Int>(0)
+        let subscription = x.afterChange += observer!
+        x <- 4
+        return x.value
     }
 }

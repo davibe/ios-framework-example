@@ -38,6 +38,19 @@ class MyFrameworkTests: XCTestCase {
         XCTAssert(result != nil)
     }
     
+    func testDoObserveValue() {
+        
+        let expectation = XCTestExpectation(description: "observed value changes correctly")
+        
+        let result = self.framework!.doObserveValue { (before, after) in
+            XCTAssert(before == 0)
+            XCTAssert(after == 4)
+            expectation.fulfill()
+        }
+        XCTAssert(result == 4)
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
