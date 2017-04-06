@@ -9,7 +9,9 @@ A minimal example implementation of an iOS framework using swift
 - [x] Run tests before build, CI style
 - [x] Includes and reads a Resource file
 - [x] Runs embedded javascript resource and returns result
-- [ ] Includes Swift and ObjC code
+- [x] Include external dependency using Carthage
+- [x] [Example app in Swift](https://github.com/davibe/ios-framework-example-app-swift)
+- [x] [Example app in Objc](https://github.com/davibe/ios-framework-example-app-objc)
 
 
 Sources
