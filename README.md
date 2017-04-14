@@ -23,6 +23,7 @@ Sources
 ### Test and Build
 
     cd $THIS_PROJECT
+    rm -rf ~/Library/Caches/org.carthage.CarthageKit
     bash scripts/build.sh
 
 The output is `MyFramework.framework` generated in the project dir 

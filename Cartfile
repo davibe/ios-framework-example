@@ -1,1 +1,2 @@
 github "slazyk/Observable-Swift"
+git "./" "master"
